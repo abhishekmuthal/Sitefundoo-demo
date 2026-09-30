@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cafe Aroma — Brewed with Love in Pune</title>
+<meta name="description" content="Cafe Aroma, Pune — artisan coffee, fresh bakes and cozy vibes. Open daily 8 AM – 11 PM.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --brown:#3b2416; --coffee:#6f4e2e; --cream:#faf5ec; --amber:#d99a3d; --dark:#1d120a;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Inter',system-ui,sans-serif;background:var(--cream);color:var(--dark);line-height:1.6}
+  h1,h2,h3{font-family:'Playfair Display',serif}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+  nav{position:sticky;top:0;z-index:50;background:rgba(29,18,10,.92);backdrop-filter:blur(8px);color:#fff}
+  nav .wrap{display:flex;align-items:center;justify-content:space-between;padding:14px 20px}
+  .logo{font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:700}
+  .logo span{color:var(--amber)}
+  nav ul{display:flex;gap:22px;list-style:none}
+  nav a{color:#f3e9d7;text-decoration:none;font-size:.95rem}
+  nav a:hover{color:var(--amber)}
+  .hero{background:radial-gradient(1200px 600px at 20% 10%, #6f4e2e 0%, #3b2416 45%, #1d120a 100%);color:#fff;padding:96px 0 88px;text-align:center}
+  .hero .badge{display:inline-block;background:rgba(217,154,61,.15);border:1px solid var(--amber);color:var(--amber);padding:6px 16px;border-radius:999px;font-size:.85rem;margin-bottom:18px}
+  .hero h1{font-size:clamp(2.4rem,6vw,4rem);line-height:1.15;margin-bottom:14px}
+  .hero h1 em{color:var(--amber);font-style:normal}
+  .hero p{max-width:560px;margin:0 auto 28px;color:#e8dcc6;font-size:1.08rem}
+  .btn{display:inline-block;background:var(--amber);color:#1d120a;font-weight:600;padding:14px 34px;border-radius:12px;text-decoration:none;font-size:1rem;transition:transform .15s}
+  .btn:hover{transform:translateY(-2px)}
+  .btn.ghost{background:transparent;color:#fff;border:1.5px solid #8a6b4a;margin-left:10px}
+  section{padding:72px 0}
+  .sec-head{text-align:center;margin-bottom:40px}
+  .sec-head h2{font-size:2rem;margin-bottom:8px}
+  .sec-head p{color:#7a6a55}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px}
+  .card{background:#fff;border-radius:16px;padding:26px;box-shadow:0 6px 24px rgba(59,36,22,.08);border:1px solid #efe4d0}
+  .card .icon{font-size:2rem;margin-bottom:10px}
+  .card h3{margin-bottom:6px;font-size:1.15rem}
+  .card p{color:#7a6a55;font-size:.95rem}
+  .menu-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+  .dish{background:#fff;border-radius:14px;padding:20px 22px;display:flex;justify-content:space-between;align-items:center;border:1px solid #efe4d0}
+  .dish h3{font-size:1.05rem;font-family:'Inter',sans-serif;font-weight:600}
+  .dish p{font-size:.85rem;color:#7a6a55}
+  .price{font-weight:700;color:var(--coffee);font-size:1.1rem;white-space:nowrap;margin-left:14px}
+  .dark{background:var(--dark);color:#f3e9d7}
+  .dark .sec-head p{color:#b9a888}
+  .testi{max-width:680px;margin:0 auto;text-align:center}
+  .testi blockquote{font-family:'Playfair Display',serif;font-size:1.35rem;line-height:1.5;margin-bottom:14px}
+  .testi cite{color:var(--amber);font-style:normal;font-size:.95rem}
+  .visit{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px}
+  .visit .card{text-align:center}
+  footer{background:#120b06;color:#b9a888;text-align:center;padding:28px 20px;font-size:.9rem}
+  footer b{color:#f3e9d7}
+  @media(max-width:640px){nav ul{display:none}.hero{padding:72px 0 64px}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <div class="logo">Cafe <span>Aroma</span></div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#visit">Visit</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="badge">☕ Pune's cosiest corner</div>
+    <h1>Good coffee.<br><em>Great conversations.</em></h1>
+    <p>Single-origin beans, slow-brewed with care, and bakes fresh out of the oven every morning. Come for the coffee, stay for the vibe.</p>
+    <a class="btn" href="#menu">See the Menu</a>
+    <a class="btn ghost" href="#visit">Find Us</a>
+  </div>
+</header>
+
+<section id="about">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Why Cafe Aroma?</h2>
+      <p>Three small promises we keep every single day.</p>
+    </div>
+    <div class="cards">
+      <div class="card"><div class="icon">🫘</div><h3>Freshly Roasted Beans</h3><p>Beans roasted in-house every week — never stale, never bitter. You can taste the difference.</p></div>
+      <div class="card"><div class="icon">🥐</div><h3>Baked Every Morning</h3><p>Croissants, banana bread and brownies go into the oven at 6 AM sharp. When they're gone, they're gone.</p></div>
+      <div class="card"><div class="icon">💺</div><h3>Made to Linger</h3><p>Fast Wi-Fi, soft music, window seats. Work, read, or just watch the world go by.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="menu" style="background:#f3ead9">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Today's Menu</h2>
+      <p>Crowd favourites — prices include all taxes.</p>
+    </div>
+    <div class="menu-grid">
+      <div class="dish"><div><h3>Classic Cold Coffee</h3><p>Blended thick, topped with cocoa</p></div><div class="price">₹149</div></div>
+      <div class="dish"><div><h3>Hazelnut Cappuccino</h3><p>Double shot, silky foam</p></div><div class="price">₹179</div></div>
+      <div class="dish"><div><h3>Masala Chai Latte</h3><p>Desi spices, steamed milk</p></div><div class="price">₹129</div></div>
+      <div class="dish"><div><h3>Butter Croissant</h3><p>Flaky, golden, French-style</p></div><div class="price">₹99</div></div>
+      <div class="dish"><div><h3>Chocolate Truffle Pastry</h3><p>Dark chocolate ganache</p></div><div class="price">₹119</div></div>
+      <div class="dish"><div><h3>Paneer Tikka Sandwich</h3><p>Grilled, mint mayo</p></div><div class="price">₹159</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews" class="dark">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>What Pune Says</h2>
+      <p>Real words from regulars.</p>
+    </div>
+    <div class="testi">
+      <blockquote>"Best cold coffee in Kothrud, hands down. The window seat on a rainy evening is my happy place."</blockquote>
+      <cite>— Priya S., regular since 2023</cite>
+    </div>
+  </div>
+</section>
+
+<section id="visit">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Come Say Hi</h2>
+      <p>We're easy to find and hard to leave.</p>
+    </div>
+    <div class="visit">
+      <div class="card"><div class="icon">📍</div><h3>Address</h3><p>Shop 4, Ground Floor, Lane 5,<br>Kothrud, Pune 411038</p></div>
+      <div class="card"><div class="icon">🕗</div><h3>Hours</h3><p>Mon – Sun<br>8:00 AM – 11:00 PM</p></div>
+      <div class="card"><div class="icon">📞</div><h3>Order / Reserve</h3><p>Call or WhatsApp<br><b>+91 98765 43210</b></p></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <b>Cafe Aroma</b> · Brewed with love in Pune · Demo site built with GitHub Pages
+</footer>
+
+</body>
+</html>
